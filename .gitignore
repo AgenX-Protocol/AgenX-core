@@ -1,0 +1,22 @@
+# Environment & Secrets
+.env
+.env.*
+
+# Foundry Build
+cache/
+out/
+
+# Foundry Dependencies (install via `forge install`)
+lib/
+
+# Deployment Broadcast Logs (contain deployer addresses)
+broadcast/
+
+# Temp files
+build_error.txt
+out.txt
+*.log
+
+# OS
+.DS_Store
+Thumbs.db

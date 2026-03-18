@@ -1,0 +1,1538 @@
+﻿{
+  "errors": [
+    {
+      "type": "UnimplementedFeatureError",
+      "component": "general",
+      "severity": "error",
+      "errorCode": null,
+      "message": "Unimplemented feature (C:\\Users\\circleci\\project\\libsolidity\\codegen\\ArrayUtils.cpp:195):Copying nested calldata dynamic arrays to storage is not implemented in the old code generator.",
+      "formattedMessage": "UnimplementedFeatureError: Copying nested calldata dynamic arrays to storage is not implemented in the old code generator.\n\n"
+    }
+  ],
+  "sources": {
+    "D:/bnb-project/contracts/script/Deploy.s.sol": [
+      {
+        "source_file": {
+          "id": 0,
+          "ast": {}
+        },
+        "version": "0.8.20",
+        "build_id": "2886a5e85b0e5ee00b9fdfe785760826",
+        "profile": "default"
+      }
+    ],
+    "D:/bnb-project/contracts/src/AgentRegistry.sol": [
+      {
+        "source_file": {
+          "id": 1,
+          "ast": {}
+        },
+        "version": "0.8.20",
+        "build_id": "2886a5e85b0e5ee00b9fdfe785760826",
+        "profile": "default"
+      }
+    ],
+    "D:/bnb-project/contracts/src/JobMarketplace.sol": [
+      {
+        "source_file": {
+          "id": 2,
+          "ast": {}
+        },
+        "version": "0.8.20",
+        "build_id": "2886a5e85b0e5ee00b9fdfe785760826",
+        "profile": "default"
+      }
+    ]
+  },
+  "contracts": {
+    "D:/bnb-project/contracts/script/Deploy.s.sol": {
+      "Deploy": [
+        {
+          "contract": {
+            "abi": [],
+            "metadata": "{\"compiler\":{\"version\":\"0.8.20+commit.a1b79de6\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"script/Deploy.s.sol\":\"Deploy\"},\"evmVersion\":\"shanghai\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"script/Deploy.s.sol\":{\"keccak256\":\"0xc5172a345d64c592b0c7a7a740e21f196d8aca08f6abb57b15f036f71ab06dec\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://95e7647a21849a7526207522e017f67dc5e93bfe62c5b8a951792ca3e7e427d0\",\"dweb:/ipfs/QmQEbXhE2cUMfMhMfuLzPvCia2AAfqbqEj1z4jKuPDC3Nk\"]}},\"version\":1}",
+            "userdoc": {},
+            "devdoc": {},
+            "evm": {
+              "bytecode": null
+            }
+          },
+          "version": "0.8.20",
+          "build_id": "2886a5e85b0e5ee00b9fdfe785760826",
+          "profile": "default"
+        }
+      ]
+    },
+    "D:/bnb-project/contracts/src/AgentRegistry.sol": {
+      "AgentRegistry": [
+        {
+          "contract": {
+            "abi": [
+              {
+                "type": "constructor",
+                "inputs": [],
+                "stateMutability": "nonpayable"
+              },
+              {
+                "type": "function",
+                "name": "addReputation",
+                "inputs": [
+                  {
+                    "name": "agentId",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  },
+                  {
+                    "name": "jobId",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  },
+                  {
+                    "name": "rating",
+                    "type": "uint8",
+                    "internalType": "uint8"
+                  },
+                  {
+                    "name": "comment",
+                    "type": "string",
+                    "internalType": "string"
+                  }
+                ],
+                "outputs": [],
+                "stateMutability": "nonpayable"
+              },
+              {
+                "type": "function",
+                "name": "admin",
+                "inputs": [],
+                "outputs": [
+                  {
+                    "name": "",
+                    "type": "address",
+                    "internalType": "address"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "agentReviews",
+                "inputs": [
+                  {
+                    "name": "",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  },
+                  {
+                    "name": "",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "jobId",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  },
+                  {
+                    "name": "reviewer",
+                    "type": "address",
+                    "internalType": "address"
+                  },
+                  {
+                    "name": "rating",
+                    "type": "uint8",
+                    "internalType": "uint8"
+                  },
+                  {
+                    "name": "comment",
+                    "type": "string",
+                    "internalType": "string"
+                  },
+                  {
+                    "name": "timestamp",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "agents",
+                "inputs": [
+                  {
+                    "name": "",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "id",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  },
+                  {
+                    "name": "owner",
+                    "type": "address",
+                    "internalType": "address"
+                  },
+                  {
+                    "name": "name",
+                    "type": "string",
+                    "internalType": "string"
+                  },
+                  {
+                    "name": "metadataURI",
+                    "type": "string",
+                    "internalType": "string"
+                  },
+                  {
+                    "name": "reputationScore",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  },
+                  {
+                    "name": "totalReviews",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  },
+                  {
+                    "name": "jobsCompleted",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  },
+                  {
+                    "name": "registeredAt",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  },
+                  {
+                    "name": "active",
+                    "type": "bool",
+                    "internalType": "bool"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "allAgentIds",
+                "inputs": [
+                  {
+                    "name": "",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "deactivateAgent",
+                "inputs": [
+                  {
+                    "name": "agentId",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  }
+                ],
+                "outputs": [],
+                "stateMutability": "nonpayable"
+              },
+              {
+                "type": "function",
+                "name": "getAgent",
+                "inputs": [
+                  {
+                    "name": "agentId",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "id",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  },
+                  {
+                    "name": "owner",
+                    "type": "address",
+                    "internalType": "address"
+                  },
+                  {
+                    "name": "name",
+                    "type": "string",
+                    "internalType": "string"
+                  },
+                  {
+                    "name": "metadataURI",
+                    "type": "string",
+                    "internalType": "string"
+                  },
+                  {
+                    "name": "skills",
+                    "type": "string[]",
+                    "internalType": "string[]"
+                  },
+                  {
+                    "name": "reputationScore",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  },
+                  {
+                    "name": "totalReviews",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  },
+                  {
+                    "name": "jobsCompleted",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  },
+                  {
+                    "name": "registeredAt",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  },
+                  {
+                    "name": "active",
+                    "type": "bool",
+                    "internalType": "bool"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "getAgentReviews",
+                "inputs": [
+                  {
+                    "name": "agentId",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "",
+                    "type": "tuple[]",
+                    "internalType": "struct AgentRegistry.Review[]",
+                    "components": [
+                      {
+                        "name": "jobId",
+                        "type": "uint256",
+                        "internalType": "uint256"
+                      },
+                      {
+                        "name": "reviewer",
+                        "type": "address",
+                        "internalType": "address"
+                      },
+                      {
+                        "name": "rating",
+                        "type": "uint8",
+                        "internalType": "uint8"
+                      },
+                      {
+                        "name": "comment",
+                        "type": "string",
+                        "internalType": "string"
+                      },
+                      {
+                        "name": "timestamp",
+                        "type": "uint256",
+                        "internalType": "uint256"
+                      }
+                    ]
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "getAgentSkills",
+                "inputs": [
+                  {
+                    "name": "agentId",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "",
+                    "type": "string[]",
+                    "internalType": "string[]"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "getAgentsByOwner",
+                "inputs": [
+                  {
+                    "name": "owner",
+                    "type": "address",
+                    "internalType": "address"
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "",
+                    "type": "uint256[]",
+                    "internalType": "uint256[]"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "getAgentsBySkill",
+                "inputs": [
+                  {
+                    "name": "skill",
+                    "type": "string",
+                    "internalType": "string"
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "",
+                    "type": "uint256[]",
+                    "internalType": "uint256[]"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "getAllAgentIds",
+                "inputs": [],
+                "outputs": [
+                  {
+                    "name": "",
+                    "type": "uint256[]",
+                    "internalType": "uint256[]"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "getAverageRating",
+                "inputs": [
+                  {
+                    "name": "agentId",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "getTotalAgents",
+                "inputs": [],
+                "outputs": [
+                  {
+                    "name": "",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "jobMarketplace",
+                "inputs": [],
+                "outputs": [
+                  {
+                    "name": "",
+                    "type": "address",
+                    "internalType": "address"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "ownerAgents",
+                "inputs": [
+                  {
+                    "name": "",
+                    "type": "address",
+                    "internalType": "address"
+                  },
+                  {
+                    "name": "",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "registerAgent",
+                "inputs": [
+                  {
+                    "name": "name",
+                    "type": "string",
+                    "internalType": "string"
+                  },
+                  {
+                    "name": "metadataURI",
+                    "type": "string",
+                    "internalType": "string"
+                  },
+                  {
+                    "name": "skills",
+                    "type": "string[]",
+                    "internalType": "string[]"
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  }
+                ],
+                "stateMutability": "nonpayable"
+              },
+              {
+                "type": "function",
+                "name": "setJobMarketplace",
+                "inputs": [
+                  {
+                    "name": "_marketplace",
+                    "type": "address",
+                    "internalType": "address"
+                  }
+                ],
+                "outputs": [],
+                "stateMutability": "nonpayable"
+              },
+              {
+                "type": "function",
+                "name": "skillToAgents",
+                "inputs": [
+                  {
+                    "name": "",
+                    "type": "string",
+                    "internalType": "string"
+                  },
+                  {
+                    "name": "",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "updateAgent",
+                "inputs": [
+                  {
+                    "name": "agentId",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  },
+                  {
+                    "name": "name",
+                    "type": "string",
+                    "internalType": "string"
+                  },
+                  {
+                    "name": "metadataURI",
+                    "type": "string",
+                    "internalType": "string"
+                  },
+                  {
+                    "name": "skills",
+                    "type": "string[]",
+                    "internalType": "string[]"
+                  }
+                ],
+                "outputs": [],
+                "stateMutability": "nonpayable"
+              },
+              {
+                "type": "event",
+                "name": "AgentDeactivated",
+                "inputs": [
+                  {
+                    "name": "agentId",
+                    "type": "uint256",
+                    "indexed": true,
+                    "internalType": "uint256"
+                  }
+                ],
+                "anonymous": false
+              },
+              {
+                "type": "event",
+                "name": "AgentRegistered",
+                "inputs": [
+                  {
+                    "name": "agentId",
+                    "type": "uint256",
+                    "indexed": true,
+                    "internalType": "uint256"
+                  },
+                  {
+                    "name": "owner",
+                    "type": "address",
+                    "indexed": true,
+                    "internalType": "address"
+                  },
+                  {
+                    "name": "name",
+                    "type": "string",
+                    "indexed": false,
+                    "internalType": "string"
+                  }
+                ],
+                "anonymous": false
+              },
+              {
+                "type": "event",
+                "name": "AgentUpdated",
+                "inputs": [
+                  {
+                    "name": "agentId",
+                    "type": "uint256",
+                    "indexed": true,
+                    "internalType": "uint256"
+                  },
+                  {
+                    "name": "name",
+                    "type": "string",
+                    "indexed": false,
+                    "internalType": "string"
+                  },
+                  {
+                    "name": "metadataURI",
+                    "type": "string",
+                    "indexed": false,
+                    "internalType": "string"
+                  }
+                ],
+                "anonymous": false
+              },
+              {
+                "type": "event",
+                "name": "JobMarketplaceSet",
+                "inputs": [
+                  {
+                    "name": "marketplace",
+                    "type": "address",
+                    "indexed": true,
+                    "internalType": "address"
+                  }
+                ],
+                "anonymous": false
+              },
+              {
+                "type": "event",
+                "name": "ReputationUpdated",
+                "inputs": [
+                  {
+                    "name": "agentId",
+                    "type": "uint256",
+                    "indexed": true,
+                    "internalType": "uint256"
+                  },
+                  {
+                    "name": "jobId",
+                    "type": "uint256",
+                    "indexed": false,
+                    "internalType": "uint256"
+                  },
+                  {
+                    "name": "rating",
+                    "type": "uint8",
+                    "indexed": false,
+                    "internalType": "uint8"
+                  },
+                  {
+                    "name": "newScore",
+                    "type": "uint256",
+                    "indexed": false,
+                    "internalType": "uint256"
+                  }
+                ],
+                "anonymous": false
+              }
+            ],
+            "metadata": "{\"compiler\":{\"version\":\"0.8.20+commit.a1b79de6\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"agentId\",\"type\":\"uint256\"}],\"name\":\"AgentDeactivated\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"agentId\",\"type\":\"uint256\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"}],\"name\":\"AgentRegistered\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"agentId\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"metadataURI\",\"type\":\"string\"}],\"name\":\"AgentUpdated\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"marketplace\",\"type\":\"address\"}],\"name\":\"JobMarketplaceSet\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"agentId\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"jobId\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint8\",\"name\":\"rating\",\"type\":\"uint8\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"newScore\",\"type\":\"uint256\"}],\"name\":\"ReputationUpdated\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"agentId\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"jobId\",\"type\":\"uint256\"},{\"internalType\":\"uint8\",\"name\":\"rating\",\"type\":\"uint8\"},{\"internalType\":\"string\",\"name\":\"comment\",\"type\":\"string\"}],\"name\":\"addReputation\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"admin\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"agentReviews\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"jobId\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"reviewer\",\"type\":\"address\"},{\"internalType\":\"uint8\",\"name\":\"rating\",\"type\":\"uint8\"},{\"internalType\":\"string\",\"name\":\"comment\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"timestamp\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"agents\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"metadataURI\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"reputationScore\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"totalReviews\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"jobsCompleted\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"registeredAt\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"active\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"allAgentIds\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"agentId\",\"type\":\"uint256\"}],\"name\":\"deactivateAgent\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"agentId\",\"type\":\"uint256\"}],\"name\":\"getAgent\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"metadataURI\",\"type\":\"string\"},{\"internalType\":\"string[]\",\"name\":\"skills\",\"type\":\"string[]\"},{\"internalType\":\"uint256\",\"name\":\"reputationScore\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"totalReviews\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"jobsCompleted\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"registeredAt\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"active\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"agentId\",\"type\":\"uint256\"}],\"name\":\"getAgentReviews\",\"outputs\":[{\"components\":[{\"internalType\":\"uint256\",\"name\":\"jobId\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"reviewer\",\"type\":\"address\"},{\"internalType\":\"uint8\",\"name\":\"rating\",\"type\":\"uint8\"},{\"internalType\":\"string\",\"name\":\"comment\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"timestamp\",\"type\":\"uint256\"}],\"internalType\":\"struct AgentRegistry.Review[]\",\"name\":\"\",\"type\":\"tuple[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"agentId\",\"type\":\"uint256\"}],\"name\":\"getAgentSkills\",\"outputs\":[{\"internalType\":\"string[]\",\"name\":\"\",\"type\":\"string[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"}],\"name\":\"getAgentsByOwner\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"\",\"type\":\"uint256[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"skill\",\"type\":\"string\"}],\"name\":\"getAgentsBySkill\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"\",\"type\":\"uint256[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getAllAgentIds\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"\",\"type\":\"uint256[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"agentId\",\"type\":\"uint256\"}],\"name\":\"getAverageRating\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getTotalAgents\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"jobMarketplace\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"ownerAgents\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"metadataURI\",\"type\":\"string\"},{\"internalType\":\"string[]\",\"name\":\"skills\",\"type\":\"string[]\"}],\"name\":\"registerAgent\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_marketplace\",\"type\":\"address\"}],\"name\":\"setJobMarketplace\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"skillToAgents\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"agentId\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"metadataURI\",\"type\":\"string\"},{\"internalType\":\"string[]\",\"name\":\"skills\",\"type\":\"string[]\"}],\"name\":\"updateAgent\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"Agents register with skills and build on-chain reputation through completed jobs\",\"kind\":\"dev\",\"methods\":{},\"title\":\"AgentRegistry\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"notice\":\"ERC-721 based AI Agent identity registry for AGENX\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/AgentRegistry.sol\":\"AgentRegistry\"},\"evmVersion\":\"shanghai\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"src/AgentRegistry.sol\":{\"keccak256\":\"0x93678194667222d5c3fe1effbed923c0f116327dc8cd938363f0f1a866da4ea1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://24f852a6fe04111706ff1b4670ed1db33c3c788b55d8544a24dfbb384c1517cb\",\"dweb:/ipfs/QmTNeb6rPeoSgP8KwUQsmVX8ZmsTZyeAnnBt8NsiKXswAS\"]}},\"version\":1}",
+            "userdoc": {},
+            "devdoc": {},
+            "evm": {
+              "bytecode": null,
+              "methodIdentifiers": {
+                "addReputation(uint256,uint256,uint8,string)": "f720a314",
+                "admin()": "f851a440",
+                "agentReviews(uint256,uint256)": "0060daa3",
+                "agents(uint256)": "513856c8",
+                "allAgentIds(uint256)": "98be7c8d",
+                "deactivateAgent(uint256)": "11ba6b4a",
+                "getAgent(uint256)": "2de5aaf7",
+                "getAgentReviews(uint256)": "3bd4a5f3",
+                "getAgentSkills(uint256)": "c47e047e",
+                "getAgentsByOwner(address)": "1ab6f888",
+                "getAgentsBySkill(string)": "d91b6b7d",
+                "getAllAgentIds()": "1136a595",
+                "getAverageRating(uint256)": "17b7e03e",
+                "getTotalAgents()": "3731a16f",
+                "jobMarketplace()": "195bf8af",
+                "ownerAgents(address,uint256)": "62febe4f",
+                "registerAgent(string,string,string[])": "8eff9c8a",
+                "setJobMarketplace(address)": "2f1c97bc",
+                "skillToAgents(string,uint256)": "cdbdc3f7",
+                "updateAgent(uint256,string,string,string[])": "e8d87437"
+              }
+            }
+          },
+          "version": "0.8.20",
+          "build_id": "2886a5e85b0e5ee00b9fdfe785760826",
+          "profile": "default"
+        }
+      ]
+    },
+    "D:/bnb-project/contracts/src/JobMarketplace.sol": {
+      "JobMarketplace": [
+        {
+          "contract": {
+            "abi": [
+              {
+                "type": "constructor",
+                "inputs": [
+                  {
+                    "name": "_agentRegistry",
+                    "type": "address",
+                    "internalType": "address"
+                  }
+                ],
+                "stateMutability": "nonpayable"
+              },
+              {
+                "type": "receive",
+                "stateMutability": "payable"
+              },
+              {
+                "type": "function",
+                "name": "acceptApplication",
+                "inputs": [
+                  {
+                    "name": "jobId",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  },
+                  {
+                    "name": "agentId",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  }
+                ],
+                "outputs": [],
+                "stateMutability": "nonpayable"
+              },
+              {
+                "type": "function",
+                "name": "admin",
+                "inputs": [],
+                "outputs": [
+                  {
+                    "name": "",
+                    "type": "address",
+                    "internalType": "address"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "agentJobs",
+                "inputs": [
+                  {
+                    "name": "",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  },
+                  {
+                    "name": "",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "agentRegistry",
+                "inputs": [],
+                "outputs": [
+                  {
+                    "name": "",
+                    "type": "address",
+                    "internalType": "contract AgentRegistry"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "allJobIds",
+                "inputs": [
+                  {
+                    "name": "",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "applyForJob",
+                "inputs": [
+                  {
+                    "name": "jobId",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  },
+                  {
+                    "name": "agentId",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  },
+                  {
+                    "name": "proposalURI",
+                    "type": "string",
+                    "internalType": "string"
+                  }
+                ],
+                "outputs": [],
+                "stateMutability": "nonpayable"
+              },
+              {
+                "type": "function",
+                "name": "approveWork",
+                "inputs": [
+                  {
+                    "name": "jobId",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  },
+                  {
+                    "name": "rating",
+                    "type": "uint8",
+                    "internalType": "uint8"
+                  },
+                  {
+                    "name": "review",
+                    "type": "string",
+                    "internalType": "string"
+                  }
+                ],
+                "outputs": [],
+                "stateMutability": "nonpayable"
+              },
+              {
+                "type": "function",
+                "name": "cancelJob",
+                "inputs": [
+                  {
+                    "name": "jobId",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  }
+                ],
+                "outputs": [],
+                "stateMutability": "nonpayable"
+              },
+              {
+                "type": "function",
+                "name": "clientJobs",
+                "inputs": [
+                  {
+                    "name": "",
+                    "type": "address",
+                    "internalType": "address"
+                  },
+                  {
+                    "name": "",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "createJob",
+                "inputs": [
+                  {
+                    "name": "title",
+                    "type": "string",
+                    "internalType": "string"
+                  },
+                  {
+                    "name": "description",
+                    "type": "string",
+                    "internalType": "string"
+                  },
+                  {
+                    "name": "requiredSkills",
+                    "type": "string[]",
+                    "internalType": "string[]"
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  }
+                ],
+                "stateMutability": "payable"
+              },
+              {
+                "type": "function",
+                "name": "disputeJob",
+                "inputs": [
+                  {
+                    "name": "jobId",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  }
+                ],
+                "outputs": [],
+                "stateMutability": "nonpayable"
+              },
+              {
+                "type": "function",
+                "name": "getAgentJobs",
+                "inputs": [
+                  {
+                    "name": "agentId",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "",
+                    "type": "uint256[]",
+                    "internalType": "uint256[]"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "getAllJobIds",
+                "inputs": [],
+                "outputs": [
+                  {
+                    "name": "",
+                    "type": "uint256[]",
+                    "internalType": "uint256[]"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "getClientJobs",
+                "inputs": [
+                  {
+                    "name": "client",
+                    "type": "address",
+                    "internalType": "address"
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "",
+                    "type": "uint256[]",
+                    "internalType": "uint256[]"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "getJob",
+                "inputs": [
+                  {
+                    "name": "jobId",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "id",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  },
+                  {
+                    "name": "client",
+                    "type": "address",
+                    "internalType": "address"
+                  },
+                  {
+                    "name": "title",
+                    "type": "string",
+                    "internalType": "string"
+                  },
+                  {
+                    "name": "description",
+                    "type": "string",
+                    "internalType": "string"
+                  },
+                  {
+                    "name": "requiredSkills",
+                    "type": "string[]",
+                    "internalType": "string[]"
+                  },
+                  {
+                    "name": "budget",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  },
+                  {
+                    "name": "status",
+                    "type": "uint8",
+                    "internalType": "enum JobMarketplace.JobStatus"
+                  },
+                  {
+                    "name": "createdAt",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  },
+                  {
+                    "name": "providerAgentId",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  },
+                  {
+                    "name": "resultURI",
+                    "type": "string",
+                    "internalType": "string"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "getJobApplicants",
+                "inputs": [
+                  {
+                    "name": "jobId",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "",
+                    "type": "uint256[]",
+                    "internalType": "uint256[]"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "getJobRequiredSkills",
+                "inputs": [
+                  {
+                    "name": "jobId",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "",
+                    "type": "string[]",
+                    "internalType": "string[]"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "getTotalJobs",
+                "inputs": [],
+                "outputs": [
+                  {
+                    "name": "",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "jobApplications",
+                "inputs": [
+                  {
+                    "name": "",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  },
+                  {
+                    "name": "",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "agentId",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  },
+                  {
+                    "name": "proposalURI",
+                    "type": "string",
+                    "internalType": "string"
+                  },
+                  {
+                    "name": "appliedAt",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "jobs",
+                "inputs": [
+                  {
+                    "name": "",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  }
+                ],
+                "outputs": [
+                  {
+                    "name": "id",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  },
+                  {
+                    "name": "client",
+                    "type": "address",
+                    "internalType": "address"
+                  },
+                  {
+                    "name": "title",
+                    "type": "string",
+                    "internalType": "string"
+                  },
+                  {
+                    "name": "description",
+                    "type": "string",
+                    "internalType": "string"
+                  },
+                  {
+                    "name": "budget",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  },
+                  {
+                    "name": "status",
+                    "type": "uint8",
+                    "internalType": "enum JobMarketplace.JobStatus"
+                  },
+                  {
+                    "name": "createdAt",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  },
+                  {
+                    "name": "completedAt",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  },
+                  {
+                    "name": "providerAgentId",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  },
+                  {
+                    "name": "resultURI",
+                    "type": "string",
+                    "internalType": "string"
+                  },
+                  {
+                    "name": "rating",
+                    "type": "uint8",
+                    "internalType": "uint8"
+                  },
+                  {
+                    "name": "review",
+                    "type": "string",
+                    "internalType": "string"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "platformFeeBps",
+                "inputs": [],
+                "outputs": [
+                  {
+                    "name": "",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "resolveDispute",
+                "inputs": [
+                  {
+                    "name": "jobId",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  },
+                  {
+                    "name": "favorProvider",
+                    "type": "bool",
+                    "internalType": "bool"
+                  }
+                ],
+                "outputs": [],
+                "stateMutability": "nonpayable"
+              },
+              {
+                "type": "function",
+                "name": "setPlatformFee",
+                "inputs": [
+                  {
+                    "name": "newFeeBps",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  }
+                ],
+                "outputs": [],
+                "stateMutability": "nonpayable"
+              },
+              {
+                "type": "function",
+                "name": "submitWork",
+                "inputs": [
+                  {
+                    "name": "jobId",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  },
+                  {
+                    "name": "resultURI",
+                    "type": "string",
+                    "internalType": "string"
+                  }
+                ],
+                "outputs": [],
+                "stateMutability": "nonpayable"
+              },
+              {
+                "type": "function",
+                "name": "totalVolume",
+                "inputs": [],
+                "outputs": [
+                  {
+                    "name": "",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "withdrawFees",
+                "inputs": [],
+                "outputs": [],
+                "stateMutability": "nonpayable"
+              },
+              {
+                "type": "event",
+                "name": "ApplicationAccepted",
+                "inputs": [
+                  {
+                    "name": "jobId",
+                    "type": "uint256",
+                    "indexed": true,
+                    "internalType": "uint256"
+                  },
+                  {
+                    "name": "agentId",
+                    "type": "uint256",
+                    "indexed": true,
+                    "internalType": "uint256"
+                  }
+                ],
+                "anonymous": false
+              },
+              {
+                "type": "event",
+                "name": "DisputeResolved",
+                "inputs": [
+                  {
+                    "name": "jobId",
+                    "type": "uint256",
+                    "indexed": true,
+                    "internalType": "uint256"
+                  },
+                  {
+                    "name": "favorProvider",
+                    "type": "bool",
+                    "indexed": false,
+                    "internalType": "bool"
+                  }
+                ],
+                "anonymous": false
+              },
+              {
+                "type": "event",
+                "name": "JobApplied",
+                "inputs": [
+                  {
+                    "name": "jobId",
+                    "type": "uint256",
+                    "indexed": true,
+                    "internalType": "uint256"
+                  },
+                  {
+                    "name": "agentId",
+                    "type": "uint256",
+                    "indexed": true,
+                    "internalType": "uint256"
+                  }
+                ],
+                "anonymous": false
+              },
+              {
+                "type": "event",
+                "name": "JobCancelled",
+                "inputs": [
+                  {
+                    "name": "jobId",
+                    "type": "uint256",
+                    "indexed": true,
+                    "internalType": "uint256"
+                  }
+                ],
+                "anonymous": false
+              },
+              {
+                "type": "event",
+                "name": "JobCreated",
+                "inputs": [
+                  {
+                    "name": "jobId",
+                    "type": "uint256",
+                    "indexed": true,
+                    "internalType": "uint256"
+                  },
+                  {
+                    "name": "client",
+                    "type": "address",
+                    "indexed": true,
+                    "internalType": "address"
+                  },
+                  {
+                    "name": "title",
+                    "type": "string",
+                    "indexed": false,
+                    "internalType": "string"
+                  },
+                  {
+                    "name": "budget",
+                    "type": "uint256",
+                    "indexed": false,
+                    "internalType": "uint256"
+                  }
+                ],
+                "anonymous": false
+              },
+              {
+                "type": "event",
+                "name": "JobDisputed",
+                "inputs": [
+                  {
+                    "name": "jobId",
+                    "type": "uint256",
+                    "indexed": true,
+                    "internalType": "uint256"
+                  }
+                ],
+                "anonymous": false
+              },
+              {
+                "type": "event",
+                "name": "WorkApproved",
+                "inputs": [
+                  {
+                    "name": "jobId",
+                    "type": "uint256",
+                    "indexed": true,
+                    "internalType": "uint256"
+                  },
+                  {
+                    "name": "rating",
+                    "type": "uint8",
+                    "indexed": false,
+                    "internalType": "uint8"
+                  },
+                  {
+                    "name": "payout",
+                    "type": "uint256",
+                    "indexed": false,
+                    "internalType": "uint256"
+                  }
+                ],
+                "anonymous": false
+              },
+              {
+                "type": "event",
+                "name": "WorkSubmitted",
+                "inputs": [
+                  {
+                    "name": "jobId",
+                    "type": "uint256",
+                    "indexed": true,
+                    "internalType": "uint256"
+                  },
+                  {
+                    "name": "resultURI",
+                    "type": "string",
+                    "indexed": false,
+                    "internalType": "string"
+                  }
+                ],
+                "anonymous": false
+              }
+            ],
+            "metadata": "{\"compiler\":{\"version\":\"0.8.20+commit.a1b79de6\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_agentRegistry\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"jobId\",\"type\":\"uint256\"},{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"agentId\",\"type\":\"uint256\"}],\"name\":\"ApplicationAccepted\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"jobId\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"bool\",\"name\":\"favorProvider\",\"type\":\"bool\"}],\"name\":\"DisputeResolved\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"jobId\",\"type\":\"uint256\"},{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"agentId\",\"type\":\"uint256\"}],\"name\":\"JobApplied\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"jobId\",\"type\":\"uint256\"}],\"name\":\"JobCancelled\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"jobId\",\"type\":\"uint256\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"client\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"title\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"budget\",\"type\":\"uint256\"}],\"name\":\"JobCreated\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"jobId\",\"type\":\"uint256\"}],\"name\":\"JobDisputed\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"jobId\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint8\",\"name\":\"rating\",\"type\":\"uint8\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"payout\",\"type\":\"uint256\"}],\"name\":\"WorkApproved\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"jobId\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"resultURI\",\"type\":\"string\"}],\"name\":\"WorkSubmitted\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"jobId\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"agentId\",\"type\":\"uint256\"}],\"name\":\"acceptApplication\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"admin\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"agentJobs\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"agentRegistry\",\"outputs\":[{\"internalType\":\"contract AgentRegistry\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"allJobIds\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"jobId\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"agentId\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"proposalURI\",\"type\":\"string\"}],\"name\":\"applyForJob\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"jobId\",\"type\":\"uint256\"},{\"internalType\":\"uint8\",\"name\":\"rating\",\"type\":\"uint8\"},{\"internalType\":\"string\",\"name\":\"review\",\"type\":\"string\"}],\"name\":\"approveWork\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"jobId\",\"type\":\"uint256\"}],\"name\":\"cancelJob\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"clientJobs\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"title\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"description\",\"type\":\"string\"},{\"internalType\":\"string[]\",\"name\":\"requiredSkills\",\"type\":\"string[]\"}],\"name\":\"createJob\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"jobId\",\"type\":\"uint256\"}],\"name\":\"disputeJob\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"agentId\",\"type\":\"uint256\"}],\"name\":\"getAgentJobs\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"\",\"type\":\"uint256[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getAllJobIds\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"\",\"type\":\"uint256[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"client\",\"type\":\"address\"}],\"name\":\"getClientJobs\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"\",\"type\":\"uint256[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"jobId\",\"type\":\"uint256\"}],\"name\":\"getJob\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"client\",\"type\":\"address\"},{\"internalType\":\"string\",\"name\":\"title\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"description\",\"type\":\"string\"},{\"internalType\":\"string[]\",\"name\":\"requiredSkills\",\"type\":\"string[]\"},{\"internalType\":\"uint256\",\"name\":\"budget\",\"type\":\"uint256\"},{\"internalType\":\"enum JobMarketplace.JobStatus\",\"name\":\"status\",\"type\":\"uint8\"},{\"internalType\":\"uint256\",\"name\":\"createdAt\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"providerAgentId\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"resultURI\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"jobId\",\"type\":\"uint256\"}],\"name\":\"getJobApplicants\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"\",\"type\":\"uint256[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"jobId\",\"type\":\"uint256\"}],\"name\":\"getJobRequiredSkills\",\"outputs\":[{\"internalType\":\"string[]\",\"name\":\"\",\"type\":\"string[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getTotalJobs\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"jobApplications\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"agentId\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"proposalURI\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"appliedAt\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"jobs\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"client\",\"type\":\"address\"},{\"internalType\":\"string\",\"name\":\"title\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"description\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"budget\",\"type\":\"uint256\"},{\"internalType\":\"enum JobMarketplace.JobStatus\",\"name\":\"status\",\"type\":\"uint8\"},{\"internalType\":\"uint256\",\"name\":\"createdAt\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"completedAt\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"providerAgentId\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"resultURI\",\"type\":\"string\"},{\"internalType\":\"uint8\",\"name\":\"rating\",\"type\":\"uint8\"},{\"internalType\":\"string\",\"name\":\"review\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"platformFeeBps\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"jobId\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"favorProvider\",\"type\":\"bool\"}],\"name\":\"resolveDispute\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"newFeeBps\",\"type\":\"uint256\"}],\"name\":\"setPlatformFee\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"jobId\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"resultURI\",\"type\":\"string\"}],\"name\":\"submitWork\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"totalVolume\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"withdrawFees\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"stateMutability\":\"payable\",\"type\":\"receive\"}],\"devdoc\":{\"details\":\"Implements ERC-8183-inspired job lifecycle: Open \\u2192 Funded \\u2192 InProgress \\u2192 Submitted \\u2192 Completed\",\"kind\":\"dev\",\"methods\":{},\"title\":\"JobMarketplace\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"acceptApplication(uint256,uint256)\":{\"notice\":\"Client accepts an agent's application\"},\"applyForJob(uint256,uint256,string)\":{\"notice\":\"Agent applies for a job\"},\"approveWork(uint256,uint8,string)\":{\"notice\":\"Client approves work and releases escrow\"},\"cancelJob(uint256)\":{\"notice\":\"Cancel an open job (no provider yet)\"},\"createJob(string,string,string[])\":{\"notice\":\"Create a job and fund escrow\"},\"disputeJob(uint256)\":{\"notice\":\"Client or provider can dispute\"},\"resolveDispute(uint256,bool)\":{\"notice\":\"Admin resolves dispute\"},\"submitWork(uint256,string)\":{\"notice\":\"Provider submits completed work\"}},\"notice\":\"On-chain job marketplace for AI agents with escrow settlement\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/JobMarketplace.sol\":\"JobMarketplace\"},\"evmVersion\":\"shanghai\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"src/AgentRegistry.sol\":{\"keccak256\":\"0x93678194667222d5c3fe1effbed923c0f116327dc8cd938363f0f1a866da4ea1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://24f852a6fe04111706ff1b4670ed1db33c3c788b55d8544a24dfbb384c1517cb\",\"dweb:/ipfs/QmTNeb6rPeoSgP8KwUQsmVX8ZmsTZyeAnnBt8NsiKXswAS\"]},\"src/JobMarketplace.sol\":{\"keccak256\":\"0x93f3cb1854a72d3a32b58313ba042b7a4176014d84b7cd7568518e03ec50f5a6\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://4fac6837c3adf3f0ac588f3b66fa89b3eb217c168efa9b2197591564ebaa5b49\",\"dweb:/ipfs/Qmcf7YcYRTm1oYBgn5UMwXeXZeGP8LrGuee7V4MtbaYoKQ\"]}},\"version\":1}",
+            "userdoc": {},
+            "devdoc": {},
+            "evm": {
+              "bytecode": null,
+              "methodIdentifiers": {
+                "acceptApplication(uint256,uint256)": "83f67f6e",
+                "admin()": "f851a440",
+                "agentJobs(uint256,uint256)": "0fb9783c",
+                "agentRegistry()": "0d1cfcae",
+                "allJobIds(uint256)": "cb29c128",
+                "applyForJob(uint256,uint256,string)": "e5b870e4",
+                "approveWork(uint256,uint8,string)": "dc71ef27",
+                "cancelJob(uint256)": "1dffa3dc",
+                "clientJobs(address,uint256)": "8facd859",
+                "createJob(string,string,string[])": "278fde8e",
+                "disputeJob(uint256)": "d93d9beb",
+                "getAgentJobs(uint256)": "4c7be507",
+                "getAllJobIds()": "88c8837f",
+                "getClientJobs(address)": "cf2646c2",
+                "getJob(uint256)": "bf22c457",
+                "getJobApplicants(uint256)": "04f801a0",
+                "getJobRequiredSkills(uint256)": "b932c6b3",
+                "getTotalJobs()": "3aee7996",
+                "jobApplications(uint256,uint256)": "ead39a11",
+                "jobs(uint256)": "180aedf3",
+                "platformFeeBps()": "22dcd13e",
+                "resolveDispute(uint256,bool)": "34b25ee2",
+                "setPlatformFee(uint256)": "12e8e2c3",
+                "submitWork(uint256,string)": "da8accf9",
+                "totalVolume()": "5f81a57c",
+                "withdrawFees()": "476343ee"
+              }
+            }
+          },
+          "version": "0.8.20",
+          "build_id": "2886a5e85b0e5ee00b9fdfe785760826",
+          "profile": "default"
+        }
+      ]
+    }
+  },
+  "build_infos": [
+    {
+      "id": "2886a5e85b0e5ee00b9fdfe785760826",
+      "source_id_to_path": {
+        "0": "script/Deploy.s.sol",
+        "1": "src/AgentRegistry.sol",
+        "2": "src/JobMarketplace.sol"
+      },
+      "language": "Solidity"
+    }
+  ]
+}
